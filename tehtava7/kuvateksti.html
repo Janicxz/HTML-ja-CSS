@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehtävä 7 - Kuvat</title>
+</head>
+
+<body>
+    <p>
+        <img src="https://www.free-graphics.com/clipart/Cartoons/angry_crocodile_tn.jpg" alt="Kuva ärtyneestä krokotiilista" style="width: 100px; height: 96px;  vertical-align: top; float:left"> 
+        Ärtynyt krokotiili. <br>
+        Kuva on haettu free-graphics sivustolta. <br>
+        Kuva latautuu suoraan free-graphics sivuston palvelimelta.
+    </p>
+    <br> <br>
+    <hr>
+    <h2>Kuvakartta</h2>
+    <img src="https://www.w3schools.com/html/workplace.jpg" usemap="#workplace-map" alt="Tietokone, kännykkä ja kahvikuppi pöydällä">
+    
+    <map name="workplace-map">
+        <area alt="Tietokone" title="Tietokone" href="" coords="33,34,271,347" shape="rect" onclick="tietokoneClick()">
+        <area alt="Kannykka" title="Kannykka" href="" coords="288,171,336,249" shape="rect" onclick="kannykkaClick()">
+        <area alt="Kahvi" title="Kahvi" href="" coords="337,303,48" shape="circle" onclick="kahviClick()">
+    </map>
+<footer>
+    <hr>
+    <p>Jani Luostarinen, viimeksi muokattu 20.1.2025</p>
+</footer>
+<script>
+    function tietokoneClick() {
+        alert("Tietokone painettu!");
+    }
+    function kannykkaClick() {
+        alert("Kännykkä painettu!");
+    }
+    function kahviClick() {
+        alert("Kahvikuppi painettu!");
+    }
+</script>
+</body>
+</html>

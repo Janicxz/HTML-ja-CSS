@@ -1,0 +1,2 @@
+Absoluuttinen viittaus on täydellinen osoite, viittaus ulkopuoliseen osoitteeseen.
+Suhteellinen viittaus on viittaus paikalliseen osoitteeseen.

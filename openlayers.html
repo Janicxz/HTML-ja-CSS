@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="openlayers.css">
+    <title>Joensuu kartta - OpenLayers</title>
+    <!-- Ladataan OpenLayers-kirjasto CDN:stä (Content Delivery Network) -->
+    <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+    <!-- Ladataan OpenLayersin CSS-tiedosto, joka sisältää kartan oletustyylit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css">
+</head>
+<body>
+    <div id="map"></div>
+
+    <script>
+         // Joensuun koordinaatit (longitude, latitude) muotoa [29.763, 62.6]
+        const joensuuCoords = [29.763, 62.6];
+
+        const map = new ol.Map({
+            // Kartta kohdistetaan `map`-div-elementtiin
+            target: 'map',
+
+            // Määritetään karttakerrokset
+            layers: [
+                new ol.layer.Tile({
+                    // Karttalähteenä käytetään OpenStreetMapia
+                    source: new ol.source.OSM()
+                })
+            ],
+
+            // Määritetään kartan näkymä, kuten keskipiste ja zoomaus
+            view: new ol.View({
+                // Keskitetään kartta Joensuuhun (koordinaatit projisoidaan Web Mercator -formaattiin)
+                center: ol.proj.fromLonLat(joensuuCoords),
+
+                // Asetetaan kartan zoomaustaso
+                zoom: 12
+            })
+
+        });
+    </script>
+</body>
+</html>

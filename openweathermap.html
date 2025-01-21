@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joensuun sää</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .weather-container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0, 0.1);
+            width: 300px;
+        }
+        .kaupunki-valinta {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="kaupunki-valinta">
+        <h3>Valitse kaupunki</h3>
+        <label for="kaupunki">Kaupunki:</label>
+        <input type="text" id="kaupunki">
+        <button onclick="selectCity()">Hae sää</button>
+    </div>
+    <div class="weather-container">
+        <h2 id="kaupunki-saa">Joensuun sää tänään</h2>
+        <p id="temperature">Lämpötila: Ladataan...</p>
+        <p id="description">Sää: Ladataan...</p>
+        <p id="humidity">Kosteus: Ladataan...</p>
+    </div>
+
+    <script>
+        const apiKey = '';
+        city = 'Joensuu';
+        apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=fi`;
+
+        async function selectCity() {
+            city = document.getElementById('kaupunki').value;
+            apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=fi`;
+            console.log("kaupunki: " + city);
+            fetchWeather();
+        }
+
+        async function fetchWeather() {
+            try {
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+
+                if (response.ok) {
+                    document.getElementById('kaupunki-saa').textContent = `${city} sää tänään`;
+                    document.getElementById('temperature').textContent = `Lämpötila: ${data.main.temp}°C`;
+                    document.getElementById('description').textContent = `Sää: ${data.weather[0].description}`;
+                    document.getElementById('humidity').textContent = `Kosteus: ${data.main.humidity}%`;
+                }
+                else {
+                    document.getElementById('temperature').textContent = 'Virhe haettaessa säätietoja';
+                    document.getElementById('description').textContent = data.message;
+                    document.getElementById('humidity').textContent = '';
+                }
+            } catch (error) {
+                document.getElementById('temperature').textContent = 'Virhe haettaessa säätietoja';
+                console.error(error);
+            }
+        }
+        fetchWeather();
+    </script>
+</body>
+</html>

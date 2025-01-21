@@ -1,0 +1,28 @@
+body {
+    background-color: darkgray;
+}
+ul.navipalkki {
+    background-color: #111;
+    padding: 0;
+}
+ul.navipalkki li {
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+}
+ul.navipalkki li a {
+    color: #FFF;
+    font-weight: bold;
+    padding: 20px;
+    display: inline-block;
+}
+img {
+    max-width: 250px;
+    border-radius: 15px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
