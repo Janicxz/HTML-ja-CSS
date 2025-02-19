@@ -1,0 +1,16 @@
+input {
+    margin: 5px;
+}
+#palkka {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    width: auto;
+}
+.palkkaTeksti {
+    display: inline;
+}
+#palkkaMaara {
+    font-weight: bold;
+    display: inline;
+}
