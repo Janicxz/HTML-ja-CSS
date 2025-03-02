@@ -1,0 +1,7 @@
+img {
+    border-left: 10px solid rgb(252, 212, 212);
+    border-top: 10px solid rgb(168, 133, 133);
+    border-right: 10px solid rgb(160, 132, 132);
+    border-bottom: 10px solid rgb(168, 168, 168);
+    border-style: groove;
+}

@@ -1,0 +1,11 @@
+
+.button {
+    border-left: 15px solid rgb(165, 165, 199);
+    border-top: 15px solid rgb(218, 218, 218);
+    border-right: 15px solid rgb(93, 102, 107);
+    border-bottom: 15px solid rgb(151, 151, 151);
+
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5em;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisäänkirjautuminen</title>
+</head>
+<body style="display: grid; place-items: center; height: 100vh; margin: 0;">
+    <form action="https://vastaanottaja.com/">
+        <fieldset>
+            <legend>Sisäänkirjautuminen</legend>
+            <p>
+                <label for="username">Käyttäjänimi:</label>
+                <input id="username" type="text" placeholder="username" name="username">
+            </p>
+            <p>
+                <label for="password">Salasana:</label>
+                <input id="password" type="password" placeholder="password" name="password">
+            </p>
+            <p>
+                <input type="radio" name="karkkitaikepponen" value="karkki" id="karkki">
+                <label for="karkki">Karkki</label>
+                <input type="radio" name="karkkitaikepponen" value="kepponen" id="kepponen">
+                <label for="kepponen">Kepponen</label>
+            </p>
+            <p>
+                <input type="checkbox" name="rotu" value="human" id="human">
+                <label for="human">Human (Ihminen)</label>
+                <input type="checkbox" name="rotu" value="nelf" id="nelf">
+                <label for="nelf">Night Elf (Yöhaltia)</label>
+                <input type="checkbox" name="rotu" value="dwarf" id="dwarf">
+                <label for="dwarf">Dwarf (kääpiö)</label>
+                <input type="checkbox" name="rotu" value="gnome" id="gnome">
+                <label for="gnome">Gnome (Tonttu)</label>
+                <input type="checkbox" name="rotu" value="draenei" id="draenei">
+                <label for="draenei">Draenei (Draenei)</label>
+            </p>
+            <p>
+                <select name="rodut">
+                    <option value="human" selected="selected">Human (Ihminen)</option>
+                    <option value="nelf">Night Elf (Yöhaltia)</option>
+                    <option value="dwarf">Dwarf (kääpiö)</option>
+                    <option value="gnome">Gnome (Tonttu)</option>
+                    <option value="draenei">Draenei (Draenei)</option>
+                </select>
+            </p>
+            <p>
+                <label for="kuvaus">Hahmon kuvaus:</label>
+                <textarea id="kuvaus" name="kuvaus" class="text" rows="3" cols="50"></textarea>
+            </p>
+            <button>Lähetä</button>
+            <button formaction="https://www.example.com/">Lähetä osoitteeseen www.example.com</button>
+            <input type="reset" value="Tyhjennä">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirjautuminen</title>
+</head>
+<body>
+    <h3>Kirjautuminen</h3>
+    <form action="kayttajatunnistus.php" method="post">
+        Käyttäjätunnus: <input name="kayttaja_tunnus" type="text"> <br><br>
+        Salasana: <input name="kayttaja_salasana" type="password"> <br><br>
+        <input type="hidden" name="lomaketunnistin" value="0">
+        <input type="submit" value="Lähetä">
+    </form>
+    <p>Et ole vielä rekisteröitynyt? Ole hyvä ja <a href="rekisterointi.html">rekisteröidy käyttäjäksi</a>.</p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+@media (min-width: 768px) {
+    .navbar-brand.logotext
+        {
+            position: absolute;
+            width: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+}
+.tietoameista-kuva {
+    max-height: 800px;
+}
+html, body {
+    height: 100%;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

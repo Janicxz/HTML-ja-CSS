@@ -1,0 +1,16 @@
+/* CSS Kehykset kuvalle, katkoviiva */
+img {
+    border: 10px dashed black;
+}
+/* Teksti kuvan päälle */
+.container {
+    position: relative;
+    color: white;
+    display: inline-block;
+}
+.teksti {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 2em;
+}

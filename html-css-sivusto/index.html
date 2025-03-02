@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="koe/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Nettisivu</title>
+</head>
+<body>
+    <!--Sivuston Header menu -->
+    <header class="container">
+        <!-- Header-osa sisältää logon ja navigaatio-menun -->
+        <div id="top-header">
+            <!--Riverian logo -->
+            <div id="logo">
+                <img src="kuvat/logo.png" alt="riveria logo">
+            </div>
+                <!--Navigaatio-menu -->
+                <nav>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="/">KOTISIVU</a></li>
+                            <li><a href="">TIETOJA MINUSTA</a></li>
+                            <li><a href="">OPISKELTAVAT AINEET</a></li>
+                            <li><a href="">CV</a></li>
+                            <li><a href="">OTA YHTEYTTÄ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </div>
+        <!-- Kuva menu, joka sisältää kuvan ja tekstin kuvan päällä. 
+            Tekstinä oltava: HTML- ja CSS-sivusto -->
+        <div id="header-image-menu">
+            <img src="kuvat/slider3.webp" alt="taustakuva">
+            <h2 id="image-text">Web-suunnittelun perusteet tekijänä Jani Luostarinen</h2>
+        </div>
+
+    </header>
+    <!-- Sivustomme sisältö, joka tulee Headerin ja Footerin väliin -->
+    <main>
+        <!-- Osio 1 (section) sivun sisällöstä -->
+        <section>
+            <div id="welcome">
+                <h1 class="title">Tervetuloa HTML- ja CSS-sivustolle</h1>
+                <p>
+                    Tämä on <b>Web-sivu</b> jossa perehdytään HTML- ja CSS-sivujen suunnittelun perusteisiin.
+                    Sivuston suunnittelussa ja tekemisessä käytetään apuna
+                    <a href="https://www.w3schools.com/html/" target="_blank" rel="nofollow">HTML</a> ja <a href="https://www.w3schools.com/css/" target="_blank" rel="nofollow">CSS</a> w3schools-tutoriaaleja.
+                    <b>Sisällössä</b> käytetyt kuvat löytyvät osoitteesta: <a href="https://pixabay.com/fi/" target="_blank" rel="nofollow">https://pixabay.com/fi/</a>. <b>Footterissa</b> olevat kuvat ja ikonit löytyvät osoitteesta: <a href="https://fontawesome.com/v4/icons/" target="_blank" rel="nofollow">https://fontawesome.com/v4/icons/</a>
+                </p>
+            </div>
+        </section>
+        <!-- Osio 2 (section) sivun sisällöstä -->
+        <section class="container" id="section-2">
+            <div class="row">
+                <div id="column1">
+                    <div class="column-title">
+                        <h2>HTML Validointi</h2>
+                    </div>
+                    <p>
+                        HTML-validaattoria käytetään tarkistamaan HTML-merkintäelementtien syntakstivirheitä, että ne noudattavat HTML-standardia.
+                    </p>
+                    <a href="https://validator.w3.org/" target="_blank" class="button">
+                        Tästä testaukseen
+                    </a>
+                </div>
+                <div id="column2">
+                    <div class="column-title">
+                        <h2>CSS Validointi</h2>
+                    </div>
+                    <p>
+                        CSS-validaattori tarkistaa CSS-tyylitiedostot varmistaakseen, että ne ovat W3-konsortion asettamien CSS-standardien mukaisia.
+                    </p>
+                    <a href="https://jigsaw.w3.org/css-validator" target="_blank" class="button">
+                        Tästä testaukseen
+                    </a>
+                </div>
+                <div id="column3">
+                    <div class="column-title">
+                        <h2>IDE Tools</h2>
+                    </div>
+                    <p>
+                        Kehitysympäristöjä koodien suorittamiseen ja testaamiseen lähes kaikilla suosituilla ja laajalti käytetyillä ohjelmointikielillä.
+                    </p>
+                    <a href="https://stackify.com/top-integrated-developer-environments-ides/" target="_blank" class="button">
+                        Tästä testaukseen
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Osio 3 (section) sivun sisällöstä -->
+        <section class="container" id="section-3">
+            <div id="row">
+                <div id="column21">
+                    <img src="kuvat/elektro.png" class="image image-full" alt="kuvituskuva">
+                    <div class="column-title">
+                        <h2>Elektroniikkaasentaja</h2>
+                        <p>Elektroniikkaasentajana osaat tehdä elektroniikka-asennuksiin liittyviä
+                            asennus-, testaus-, korjaus- ja huoltotöitä.
+                            Osaat käsitellä
+                            elektroniikka-asennuksissa tarvittavia komponentteja,
+                            laitteita ja materiaaleja
+                            sekä käyttää tarvittavia työ-, huolto- ja mittavälineitä
+                            erilaisissa koulutukseen liittyvissä töissä.
+                        </p>
+                        <a href="https://eperusteet.opintopolku.fi/#/fi/esitys/6779583/reformi/tutkinnonosat/6810814" target="_blank" class="button">
+                            Lue lisää
+                        </a>
+                    </div>
+                </div>
+                <div id="column22">
+                    <img src="kuvat/ohjelmoija.png" class="image image-full" alt="kuvituskuva">
+                    <div class="column-title">
+                        <h2>Ohjelmistokehittäjä</h2>
+                    </div>
+                    <p>
+                        Ohjelmistokehittäjänä osaat ohjelmoida, hyödyntää rajapintoja,
+                        käsitellä tietoa sekä käyttää versionhallintaa.
+                        Ohjelmistokehitystiimin jäsenenä kommunikoit asiakkaan kanssa,
+                        suunnittelet ohjelmiston toteutuksen ja varmistat toteutettavien toimintojen laadun.
+                    </p>
+                    <a href="https://eperusteet.opintopolku.fi/#/fi/esitys/6779583/reformi/tutkinnonosat/6810819" target="_blank" class="button">
+                        Lue lisää
+                    </a>
+                </div>
+                <div id="column23">
+                    <img src="kuvat/hyvin.png" class="image image-full" alt="kuvituskuva">
+                    <div class="column-title">
+                        <h2>Hyvinvointiteknologia-asentaja</h2>
+                    </div>
+                    <p>
+                        Hyvinvointiteknologia-asentajana osaat asentaa turvalaite- ja hyvintointiteknologiajärjestelmiä
+                        sekä hyödyntää hyvinvointiteknologiaa asiakkaan toimintakyvyn ylläpitämiseen.
+                        Osaat varmistaa laitteiden turvallisen käytön ja opastaa asiakasta hyvinvointiteknologian käytössä.
+                    </p>
+                    <a href="https://eperusteet.opintopolku.fi/#/fi/esitys/6779583/reformi/tutkinnonosat/6810816" target="_blank" class="button">
+                        Lue lisää
+                    </a>
+                </div>
+                <div id="column24">
+                    <img src="kuvat/tuki.png" class="image image-full" alt="kuvituskuva">
+                    <div class="column-title">
+                        <h2>IT-tukihenkilö</h2>
+                    </div>
+                    <p>
+                        IT-tukihenkilönä osaat toimia työasemien, verkko.- ja lisälaitteiden sekä toimialueiden muodostamassa
+                        tieto- ja viestintäteknisessä ympäristössä.
+                        Toimit osana tietohallintoa sekä autat käyttäjiä erilaisissa teknisissä ongelmissa
+                        asiakkaan tiloissa tai etäyhteyden välityksellä.
+                    </p>
+                    <a href="https://eperusteet.opintopolku.fi/#/fi/esitys/6779583/reformi/tutkinnonosat/6810818" target="_blank" class="button">
+                        Lue lisää
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer menu -->
+    <footer>
+       <div class="company-details">
+        <div class="row">
+            <div id="col1">
+                <span id="icon" class="fa fa-map-marker"></span>
+                <span>
+                    Käyntiosoite: Peltolankatu 4, 80220 Joensuu <br/>
+                    Postiosoite: PL 70, 80101 Joensuu
+                </span>
+            </div>
+            <div id="col2">
+                <span id="icon2" class="fa fa-phone"></span>
+                <span>
+                    Puhelin: 013 244 200
+                </span>
+            </div>
+            <div id="col3">
+                <span id="icon3" class="fa fa-envelope"></span>
+                <span>
+                    kirjaamo@riveria.fi
+                </span>
+            </div>
+        </div>
+       </div>
+       <div class="copyright">
+        <p>© Kaikki oikeudet pidätetään | Riveria</p>
+        <ul class="contact">
+            <li>
+                <a href="https://twitter.com/riverialainen/" class="fa fa-twitter">
+
+                </a>
+                <a href="https://www.facebook.com/riveria/" class="fa fa-facebook">
+                    
+                </a>
+                <a href="https://www.pinterest.com/riveria/" class="fa fa-pinterest">
+                    
+                </a>
+            </li>
+        </ul>
+       </div>
+    </footer>
+</body>
+</html>
