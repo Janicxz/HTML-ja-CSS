@@ -1,0 +1,2 @@
+3) Leveyssuuntaan tilaa viedään kokonaisuudessaan 264px. 
+(width 200px + padding vasen ja oikea 60px yhteensä + reunat vasen ja oikea yhteensä 4px)

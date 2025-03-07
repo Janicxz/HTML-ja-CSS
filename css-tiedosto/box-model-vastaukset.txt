@@ -1,0 +1,17 @@
+1) Box model eli laatikkomalli on "laatikko" joka ympäröi kaikkia HTML-elementtejä.
+
+2) Siihen sisältyy marginaali (margin), kehykset/reuna (border), täyte (padding) ja itse elementin sisältö (content).
+
+3) Content-box ja border-box.
+Content-box on oletustyyppi, jossa vain laatikon sisällön leveys otetaan huomioon laatikon leveyttä laskiessa.
+Border-box tyypissä taas leveydessä huomioidaan kehykset, täyte ja sisältö.
+
+4) Asemointitapoja CSS:ssä on position (static, relative, absolute, fixed)
+
+5) Normal flow on CSS:n oletus flow muoto. Elementit siirtyvät ylhäältä alaspäin.
+
+6) Relative position, eli suhteellinen asemointi. Elementin asemointi muuttuu suhteessa sen alkuperäiseen sijaintiin.
+
+7) Miten float toimii? Float, "leijuttaa" sisällön, esimerkiksi kuvan vasempaan tai oikeaan reunaan.
+
+8) Miten toimii absolute positioning? Absoluuttinen sijoittelu poistaa elementin "normal flow":sta ja siirtää sitä verrattuna dokumenttipuussa ylöspäin lähimpään elementtiin jolla on sijoitteluna relative, absolute tai fixed. Jos sellaista elementtiä ei löydy, käytetään ylintä elementtiä.

@@ -1,0 +1,21 @@
+.container {
+    background-color: mediumslateblue;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 650px;
+}
+#rivi1, #rivi2 {
+    background-color: lightgray;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+#rivi3 {
+    background-color: lightgray;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}

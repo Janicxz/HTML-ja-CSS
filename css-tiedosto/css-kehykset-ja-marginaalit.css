@@ -1,0 +1,18 @@
+#kuva-border {
+    border: 10px solid rgb(165, 172, 231);
+}
+#kuva-outline {
+    outline: 10px solid rgb(165, 172, 231);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container {
+    max-width: 350px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+body {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,40 @@
+1) 
+Kaskadi (cascading) tarkoittaa tässä CSS:n-tyylitietojen periytyvyyttä, 
+jossa tyylisäännöt periytyvät ylemmältä tasolta alaspäin.
+
+2) 
+CSS luotiin helpottamaan verkkosivujen ulkoasujen kehitystä.
+Aiemmin tyylitietoja muokattiin suoraan HTML kautta, mikä oli huomattavasti hitaampaa nykyiseen CSS:n käyttöön verrattuna.
+
+3)
+Yhden tai useamman CSS-tyylitiedon voi jakaa useamman sivun kanssa, joka nopeuttaa työskentelyä huomattavasti.
+Enää ei tarvitse yksitellen muokata jokaista sivua erikseen, vaan voimme muokata niitä jaetusta CSS-tyylitiedosta.
+
+4)
+HTML-dokumentissa CSS-määritykset voi antaa joko
+a) Dokumentin ulkoiseen tiedostoon linkkaamalla, joka on suositeltu tapa määrittää CSS-tyylitiedot: <link rel="stylesheet" href="">
+b) Upottamalla ne HTML tiedostoon suoraan käyttämällä <style> </style> tageja.
+c) Määrittämällä ne suoraan HTML-elementeissä, esimerkiksi: <p style="color: red;">Punaista tekstiä</p>
+
+5)
+a, p {
+    color: blue;
+}
+
+6) CSS syntaksi muodostuu osista (eng): Selector, Property ja Value.
+Näistä ensimmäinen valitsee mitä HTML-elementtiä nämä tyyliohjeet koskevat, Property määrittää mitä tyylisääntöä muutetaan, ja value uuden arvon.
+
+7) CSS:ssä Kommentit kirjoitetaan /* ja */ merkkien väliin.
+
+8) Class-valitsinta käytetään kun tyylisääntö jaetaan useamman elementin kanssa, esimerkiksi 
+.App-link {
+  color: #61dafb;
+}
+9) Id-valitsinta käytetään silloin kun tyylisääntöä halutaan muokata vain tietyn elementin kohdalla, esimerkiksi
+#logo {
+    float: left;
+    padding: none;
+    margin: none;
+    height: 60px;
+    width: 30%;
+}

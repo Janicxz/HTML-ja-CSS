@@ -1,0 +1,26 @@
+#parent {
+    background-color: rgb(127, 168, 223);
+    width: 700px;
+    height: 500px;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    position: relative;
+}
+#child1 {
+    height: 150px;
+    width: 700px;
+    background-color: rgb(85, 196, 100);
+    position: relative;
+    left: 150px;
+}
+#child2 {
+    height: 150px;
+    width: 700px;
+    background-color: rgb(49, 136, 41);
+}
+#child3 {
+    height: 150px;
+    width: 700px;
+    background-color: rgb(30, 66, 21);
+}
