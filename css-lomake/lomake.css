@@ -1,0 +1,19 @@
+
+form {
+    display: grid;
+    width: 300px;
+    font-family: Arial,  sans-serif;
+    font-size: 13px;
+    background-color: rgb(207, 243, 243);
+    padding: 15px;
+    
+}
+input, textarea {
+    border: 2px solid rgb(66, 115, 161);
+    margin-bottom: 5px;
+    padding: 4px;
+}
+textarea {
+    resize: none;
+    overflow-y: scroll;
+}
